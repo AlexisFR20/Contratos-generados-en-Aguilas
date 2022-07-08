@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<br>
+<br>
+<label style="padding-left: 2rem;" for="">Ingresa el numero de orden.</label>
+<input type="text" placeholder="Numero de orden" id="numOrden" required>
+<marquee id="errorDatos" style="background-color: red;" behavior="slide"></marquee>
+<br>
+<br>
+<br>
+
+<fieldset>
+  <legend>SELECCIONA EL TIPO DE DOCUMENTO A GENERAR</legend>
+  <div>
+    <input type="radio" id="contactChoice1" onclick="typeSelect(1)" name="typeOfData" value="1" checked>
+    <label for="contactChoice1">Contrato individual</label>
+    <br>
+    <input type="radio" id="contactChoice2" onclick="typeSelect(2)" name="typeOfData" value="2">
+    <label for="contactChoice2">Segundo contrato</label>
+    <br>
+    <input type="radio" id="contactChoice3" onclick="typeSelect(3)" name="typeOfData" value="3">
+    <label for="contactChoice3">Tercer contrato</label>
+    <br>
+    <br>
+  </div>
+
+  <div>
+    <button onclick="boton()">Generar</button>
+  </div>
+
+  
+</fieldset>
+
+<script src="main.js"></script>
+</body>
+
+</html>
