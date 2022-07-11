@@ -105,32 +105,40 @@ if (rfcEmpresa === "null") {
 }
 
 var direccionEmpresa = sessionStorage.getItem('base_location_name')
-document.getElementById('lugarHoy').textContent = direccionEmpresa
-document.getElementById('lugarHoy2').textContent = direccionEmpresa
-
 
 let date = new Date();
 let dateNow = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0') + '/' + date.getFullYear();
+let dayNow = String(date.getDate()).padStart(2, '0');
+let monthNow = String(date.getMonth() + 1);
 
-document.getElementById("fechaHoy").textContent = dateNow
+document.getElementById('dayNow').textContent = dayNow
+
+document.getElementById('lugarHoy').textContent = direccionEmpresa
+
+document.getElementById('ciudad').textContent = ciudad
+document.getElementById('ciudad2').textContent = ciudad
+document.getElementById('ciudad3').textContent = ciudad
+
+// // document.getElementById("fechaHoy").textContent = dateNow
 
 
 document.getElementById("name").textContent = nombreCompleto
 document.getElementById("name2").textContent = nombreCompleto
-document.getElementById("name3").textContent = nombreCompleto
+// document.getElementById("name3").textContent = nombreCompleto
 
 
 document.getElementById("puesto").textContent = puesto
 document.getElementById("puesto2").textContent = puesto
+document.getElementById("puesto3").textContent = puesto
 
 
-document.getElementById("rfcEmpresa").textContent = rfcEmpresa
+// document.getElementById("rfcEmpresa").textContent = rfcEmpresa
 
 document.getElementById("edad").textContent = age
 
 document.getElementById("edoCivil").textContent = edo_civil
 
-document.getElementById("sexo").textContent = sexo
+// document.getElementById("sexo").textContent = sexo
 
 document.getElementById("curp").textContent = curp
 
@@ -139,7 +147,11 @@ document.getElementById("rfc").textContent = rfc
 document.getElementById("domicilio").textContent = domicilio
 
 document.getElementById("fechaEntrada").textContent = fechaEntrada
-
 document.getElementById("fechaEntrada2").textContent = fechaEntrada
 
+// document.getElementById("fechaEntrada2").textContent = fechaEntrada
+
 document.getElementById("salario").textContent = salarioDiario
+document.getElementById("salario2").textContent = salarioDiario
+
+

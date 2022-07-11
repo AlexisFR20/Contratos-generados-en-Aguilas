@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>CONTRATO INDIVIDUAL</title>
+    <title>CONTRATO INDIVIDUAL GENERADO</title>
 </head>
 
 <body>
@@ -19,28 +19,31 @@
             REPRESENTADA EN ESTE ACTO POR [NOMBRE DEL REPRESENTANTE] EN SU CALIDAD DE REPRESENTANTE LEGAL, Y POR LA OTRA
             PARTE <b id="name"></b> A QUIEN EN LO SUCESIVO SE LE DENOMINARA EL “EMPLEADO”, CONFORME A LAS SIGUIENTES
             DECLARACIONES Y CLAUSULAS:
-            
+
         </p>
 
         <center>
             <h2>DECLARACIONES:</h2>
         </center>
-        
+
         <p>
             I. La EMPRESA manifiesta:</br>
             a) Ser una sociedad mercantil debidamente organizada y existente conforme a las leyes de los Estados Unidos
             Mexicanos.</br>
-            b) Tener su domicilio en [señalar domicilio de la Empresa].</br>
-            c) Requerir los servicios del EMPLEADO como [señalar puesto], para desarrollar los deberes y actividades que
+            b) Tener su domicilio en <b id="lugarHoy"></b>.</br>
+            c) Requerir los servicios del EMPLEADO como <b id="puesto"></b>, para desarrollar los deberes y actividades
+            que
             en forma enunciativa más no limitativa se establecen en este Contrato.</br>
-            d) Tener como Registro Federal de Contribuyente ("RFC") el número [número].</br>
-            e) Que de conformidad a sus estatutos, actualmente se dedica, entre otras actividades a [describir objeto
-            social].</br></br>
+            d) Tener como Registro Federal de Contribuyente ("RFC") el número <b id="rfcEmpresa"></b>.</br>
+            e) Que de conformidad a sus estatutos, actualmente se dedica, entre otras actividades a <input type="text" id="name" name="name" placeholder="describir objeto social" maxlength="255"
+            size="70" style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;">.</br></br>
 
             II. El EMPLEADO declara:</br>
-            a) Llamarse [Nombre], ser de nacionalidad mexicana, tener [edad] años de edad, [estado civil], de sexo
-            [señalar], con Clave Única de Registro de Población (“CURP”) número [número] y RFC número [número].</br>
-            b) Tener su domicilio en [domicilio]. </br>
+            a) Llamarse <b id="name3"></b>, ser de nacionalidad mexicana, tener <b id="edad"></b> años de edad, <b
+                id="edoCivil"></b>, de sexo
+            <b id="sexo"></b>, con Clave Única de Registro de Población (“CURP”) número <b id="curp"></b> y RFC número
+            <b id="rfc"></b>.</br>
+            b) Tener su domicilio en <b id="domicilio"></b>. </br>
             c) Que cuenta con todos los requisitos que exige el Gobierno de México para prestar sus servicios en el
             País.</br>
             d) Que a la fecha del presente Contrato no detenta acciones o de otra manera participa o tiene interés
@@ -58,7 +61,8 @@
         <h3>1. RELACIÓN DE TRABAJO</h3>
         <p>
             En este acto la EMPRESA contrata al EMPLEADO, quien acepta, para que el EMPLEADO preste sus servicios
-            personales subordinados como [puesto]. Tales servicios consistirán en las labores señaladas en forma
+            personales subordinados como <b id="puesto2"></b>. Tales servicios consistirán en las labores señaladas en
+            forma
             enunciativa más no limitativa en el presente Contrato. </br>
             El EMPLEADO está de acuerdo que, dentro de sus deberes y obligaciones, en consideración al pago de su
             salario y prestaciones y sujeto al control y subordinación de la EMPRESA, está obligado a prestar servicios
@@ -87,16 +91,26 @@
             Con la finalidad de verificar que el EMPLEADO cumple con los requisitos y conocimientos necesarios para
             desarrollar el trabajo para el cual en este acto se le contrata, EMPRESA y EMPLEADO acuerdan que la relación
             de trabajo entre ambas partes estará sujeta a un PERÍODO DE PRUEBA. </br>
-            El período a prueba al que hace alusión la presente Cláusula tendrá una duración de [señalar días] a partir
+            El período a prueba al que hace alusión la presente Cláusula tendrá una duración de
+            <select name="dias" id="dias" style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;">
+                <option value="30">30 días</option>
+                <option value="60">60 días</option>
+                <option value="90">90 días</option>
+                <option value="Indefinido">Indefinido</option>
+            </select>
+            a partir
             de la fecha en la que el EMPLEADO comience a prestar sus servicios a la EMPRESA.</br>
+            
             En caso que al término del PERÍODO A PRUEBA, el EMPLEADO no acredite que satisface los requisitos y
             conocimientos necesarios para desarrollar las labores señaladas en la presente Cláusula, se dará por
             terminada la relación de trabajo, sin responsabilidad para la EMPRESA, de acuerdo a lo señalado en la
             Ley.</br>
             Ambas partes reconocen expresamente que los requisitos y conocimientos que deberá demostrar el EMPLEADO
             durante el PERÍODO DE PRUEBA son los siguientes:</br>
-            a) [señalar requisitos y conocimientos];</br>
-            b) [señalar requisitos y conocimientos].
+            a) <input type="text" id="name" name="name" placeholder="señalar requisitos y conocimientos" maxlength="255"
+                size="150" style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;"></br>
+            b) <input type="text" id="name" name="name" placeholder="señalar requisitos y conocimientos" maxlength="255"
+                size="150" style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;">
         </p>
 
         <h3>5. LUGAR DE TRABAJO</h3>
@@ -122,8 +136,8 @@
 
         <h3>7. DURACIÓN</h3>
         <p>
-            La relación de trabajo del EMPLEADO con la EMPRESA empezará el [señalar fecha de inicio de la prestación de
-            servicios], fecha en la que iniciará el PERÍODO DE PRUEBA al que se hace mención en la Cláusula Tercera del
+            La relación de trabajo del EMPLEADO con la EMPRESA empezará el <b id="fechaEntrada"></b>, fecha en la que
+            iniciará el PERÍODO DE PRUEBA al que se hace mención en la Cláusula Tercera del
             presente Contrato.</br>
             Una vez concluido el PERÍODO A PRUEBA, de acreditar el EMPLEADO a juicio del patrón que cuenta, cumple y
             satisface los requisitos y conocimientos señalados en la Cláusula Tercera del presente, la relación laboral
@@ -150,14 +164,13 @@
 
         <h3>9. RECONOCIMIENTO DE ANTIGÜEDAD.</h3>
         <p>
-            El PATRON le reconoce al EMPLEADO una antigüedad a partir del día [señalar fecha de inicio de la prestación
-            de servicios].
+            El PATRON le reconoce al EMPLEADO una antigüedad a partir del día <b id="fechaEntrada2"></b>.
         </p>
 
         <h3>10. SALARIO</h3>
         <p>
             La EMPRESA pagará al EMPLEADO por los servicios establecidos en este Contrato, un salario diario bruto de
-            $[señalar salario diario base con número] M.N. ([señalar salario mensual base con letra /100 M.N.]), salario
+            $<b id="salario"></b> M.N. ([señalar salario mensual base con letra /100 M.N.]), salario
             que incluye el pago de días de descanso semanal y obligatorio, mismo que estará sujeto a las deducciones
             aplicables en términos de las leyes laborales y fiscales o cualquiera otra disposición aplicable. El salario
             se pagará al EMPLEADO semanalmente en el lugar donde el EMPLEADO presta sus servicios o en cualquier otro
@@ -293,8 +306,12 @@
         <p>
             Adicionalmente a lo señalado en las Cláusulas que anteceden, el EMPLEADO tendrá derecho a las siguientes
             prestaciones durante la temporalidad de su relación de trabajo con la EMPRESA:</br>
-            a) [señalar prestaciones extra legales EN CASO DE SER APLICABLE];</br>
-            b) [señalar prestaciones extra legales EN CASO DE SER APLICABLE];</br>
+            a) <input type="text" id="name" name="name"
+                placeholder="señalar prestaciones extra legales EN CASO DE SER APLICABLE" maxlength="80" size="150"
+                style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;"></br>
+            b) <input type="text" id="name" name="name"
+                placeholder="señalar prestaciones extra legales EN CASO DE SER APLICABLE" maxlength="80" size="150"
+                style="border: none; font-family: 'Times New Roman', Times, serif; font-size: 1em; font-weight: bold;"></br>
 
             Las partes acuerdan que el EMPLEADO tendrá derecho a las prestaciones que la EMPRESA otorgue o implemente en
             el futuro, durante la vigencia de su relación de trabajo.
@@ -315,7 +332,7 @@
             Lo no establecido en este Contrato será regulado de acuerdo con lo establecido en la Ley y en las demás
             disposiciones aplicables.</br>
             Leído que fue el presente Contrato por las partes, ratifican su contenido y lo firman por duplicado de
-            conformidad al artículo 24 de la Ley, el [señalar fecha] en [señalar lugar].
+            conformidad al artículo 24 de la Ley, el <b id="fechaHoy"></b> en <b id="lugarHoy2"></b>.
         </p>
 
         <br>
@@ -341,6 +358,7 @@
     </div>
 
     <script src="../JavaScript/ContratoIndividualMain.js"></script>
+    <script>window.alert("CUANDO TERMINES DE UTILIZAR EL CONTRATO, CIERRA LA PESTAÑA.");</script>
 </body>
 
 </html>

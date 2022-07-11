@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>regresar</title>
+    <style>
+        .contenedor {
+
+            position: relative;
+        }
+
+        .hijo {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <title>REINICIAR APLICACION</title>
 </head>
+
 <body>
-    <a href="/GenContratos.html">Continue</a>
+    <div class="contenedor">
+        <a href="/GenContratos.html" class="hijo">REINICIAR APLICACION</a>
+        <br><br>
+        <br><br><br><br>
+        <center style="background-color: yellow;">NOTA: Para reiniciar aplicacion, cierra el contrato previamente generado</center>
+    </div>
+    <script>localStorage.setItem("typeOfData", 1)</script>
 </body>
+
 </html>
